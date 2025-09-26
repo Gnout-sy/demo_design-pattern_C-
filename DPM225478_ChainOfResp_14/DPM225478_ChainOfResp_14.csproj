@@ -11,4 +11,8 @@
     <ProjectReference Include="..\DPM225478_Singleton\DPM225478_Singleton_05.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="structural\" />
+  </ItemGroup>
+
 </Project>
