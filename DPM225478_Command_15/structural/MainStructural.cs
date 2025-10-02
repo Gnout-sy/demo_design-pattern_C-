@@ -6,7 +6,19 @@ using System.Threading.Tasks;
 
 namespace DPM225478_Command_15.structural
 {
-    internal class MainStructural
+    public class MainStructural
     {
+        public static void Main(string[] args)
+        {
+            // Create receiver, command, and invoker
+            Receiver receiver = new Receiver();
+            Command command = new ConcreteCommand(receiver);
+            Invoker invoker = new Invoker();
+            // Set and execute command
+            invoker.SetCommand(command);
+            invoker.ExecuteCommand();
+            // Wait for user
+            Console.ReadKey();
+        }
     }
 }

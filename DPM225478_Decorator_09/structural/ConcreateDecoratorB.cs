@@ -6,7 +6,19 @@ using System.Threading.Tasks;
 
 namespace DPM225478_Decorator_09.structural
 {
-    internal class ConcreateDecoratorB
+    public class ConcreateDecoratorB : Decorator
     {
+        public ConcreateDecoratorB(Component component) : base(component)
+        {
+        }
+        public override void Operation()
+        {
+            base.Operation();
+            AddedBehavior();
+            Console.WriteLine("ConcreteDecoratorB.Operation()");
+        }
+        void AddedBehavior()
+        {
+        }
     }
 }

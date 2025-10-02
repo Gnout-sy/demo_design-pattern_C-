@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace DPM225478_Decorator_09.structural
 {
-    internal class Component
+    public abstract class Component
     {
+        public abstract void Operation();
     }
 }

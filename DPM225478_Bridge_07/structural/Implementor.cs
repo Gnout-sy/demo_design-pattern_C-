@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace DPM225478_Bridge_07.structural
 {
-    internal class Implementor
+    public abstract class Implementor
     {
+        public override void Operation()
+        {
+            Implementor.Operation();
+        }
     }
 }

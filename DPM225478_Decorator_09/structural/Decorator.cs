@@ -6,7 +6,19 @@ using System.Threading.Tasks;
 
 namespace DPM225478_Decorator_09.structural
 {
-    internal class Decorator
+    public abstract class Decorator : Component
     {
+        protected Component component;
+        public void SetComponent(Component component)
+        {
+            this.component = component;
+        }
+        public override void Operation()
+        {
+            if (component != null)
+            {
+                component.Operation();
+            }
+        }
     }
 }

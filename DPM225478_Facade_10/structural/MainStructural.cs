@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace DPM225478_Facade_10.structural
 {
-    internal class MainStructural
+    public class MainStructural
     {
+        public override void Operation()
+        {
+            base.Operation();
+            Console.WriteLine("ConcreteDecoratorA.Operation()");
+        }
     }
 }

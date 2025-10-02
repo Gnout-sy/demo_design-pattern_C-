@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace DPM225478_FlyWeight_12.structural
 {
-    internal class Flyweight
+    public abstract class Flyweight
     {
+        public abstract void Operation(int extrinsicState);
     }
 }

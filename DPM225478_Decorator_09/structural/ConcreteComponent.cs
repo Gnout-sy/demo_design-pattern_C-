@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace DPM225478_Decorator_09.structural
 {
-    internal class ConcreteComponent
+    public class ConcreteComponent : Component
     {
+        public override void Operation()
+        {
+            Console.WriteLine("ConcreteComponent Operation");
+        }
     }
 }

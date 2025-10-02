@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace DPM225478_Command_15.structural
 {
-    internal class Receiver
+    public class Receiver
     {
+        public void Action()
+        {
+            Console.WriteLine(" Called Receiver.action()");
+        }
     }
 }

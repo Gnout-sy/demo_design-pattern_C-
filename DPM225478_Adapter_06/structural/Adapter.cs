@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace DPM225478_Adapter_06.structural
 {
-    internal class Adaptee
+    public class Adapter
     {
+        public void SpecificRequest()
+        {
+            Console.WriteLine("Called SpecificRequest()");
+        }
     }
 }

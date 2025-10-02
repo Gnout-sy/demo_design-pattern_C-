@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace DPM225478_Command_15.structural
 {
-    internal class Invoker
+    public class Invoker
     {
+        Command command;
+        public void SetCommand(Command command)
+        {
+            this.command = command;
+        }
+        public void ExecuteCommand()
+        {
+            command.Execute();
+        }
     }
 }
+

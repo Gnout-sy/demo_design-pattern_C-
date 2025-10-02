@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace DPM225478_Facade_10.structural
 {
-    internal class SubSystemFour
+    public class SubSystemFour
     {
+        public void MethodFour()
+        {
+            Console.WriteLine(" SubSystemFour Method");
+        }
     }
 }

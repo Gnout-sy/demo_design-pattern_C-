@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace DPM225478_Adapter_06.structural
 {
-    internal class Target
+    public class Target
     {
+        public virtual void Request()
+        {
+            Console.WriteLine("Called Target Request()");
+        }
     }
 }

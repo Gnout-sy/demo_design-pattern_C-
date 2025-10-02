@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace DPM225478_Bridge_07.structural
 {
-    internal class ConcreateImplementorA
+    public class ConcreateImplementorA : Implementor
     {
+        public override void Operation()
+        {
+            Console.WriteLine("Called ConcreteImplementorA's Operation()");
+        }
     }
 }

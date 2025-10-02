@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace DPM225478_ChainOfResp_14.structural
 {
-    internal class Handler
+    public abstract class Handler
     {
+        protected Handler successor;
+        public void SetSuccessor(Handler successor)
+        {
+            this.successor = successor;
+        }
+        public abstract void HandleRequest(int request);
     }
 }
